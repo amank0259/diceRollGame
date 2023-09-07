@@ -165,3 +165,14 @@ main {
 .hidden {
   display: none;
 }
+
+.footer {
+  position: absolute;
+  display: flex;
+  bottom: 2%;
+}
+
+.footer > p {
+  font-size: 15px;
+  color: rgb(117, 114, 109);
+}
