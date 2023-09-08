@@ -1,5 +1,4 @@
 "use strict";
-
 //  Selecting Elements
 const player0El = document.querySelector(".player-0");
 const player1El = document.querySelector(".player-1");
@@ -29,6 +28,7 @@ const init = function () {
   current1El.textContent = 0;
   player0El.classList.add("player-active");
 };
+
 init();
 
 // Rolling Dice Function
