@@ -56,20 +56,6 @@ btnRoll.addEventListener("click", function () {
       player0El.classList.toggle("player-active");
       player1El.classList.toggle("player-active");
     }
-    //   3. Check for rolled 1: if true, switch to next player
-    if (dice !== 1) {
-      // Add dice to Current Player
-      currentScore += dice;
-      document.getElementById(`current-${activePlayer}`).textContent =
-        currentScore;
-    } else {
-      // Switch to Next Player
-      document.getElementById(`current-${activePlayer}`).textContent = 0;
-      currentScore = 0;
-      activePlayer = activePlayer === 0 ? 1 : 0;
-      player0El.classList.toggle("player-active");
-      player1El.classList.toggle("player-active");
-    }
   }
 });
 
